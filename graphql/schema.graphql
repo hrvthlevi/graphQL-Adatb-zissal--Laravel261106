@@ -1,0 +1,16 @@
+type Query {
+  users:[User!]! @all
+
+}
+
+type User {
+    "Unique primary key."
+    id: ID!
+
+    "Non-unique name."
+    name: String!
+
+    "Unique email address."
+    email: String!
+
+}
